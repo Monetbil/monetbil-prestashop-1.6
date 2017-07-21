@@ -1,4 +1,4 @@
-help{*
+{*
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License or any later version.
@@ -28,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
                         <div class="col-md-3"></div>
                         <div class="col-md-9">
                             <div style="text-align:left;margin-bottom:30px;">
-                                <a class="btn-green" href="https://www.monetbil.com/try-monetbil?partner_url={$url|escape:'htmlall':'UTF-8'}" target="_blank">{l s='Create an account' mod='monetbil'}</a>
+                                <a class="btn-green" href="https://www.monetbil.com/try-monetbil?partner_url={$partner_url|escape:'htmlall':'UTF-8'}" target="_blank">{l s='Create an account' mod='monetbil'}</a>
                             </div>
                         </div>
                     </div>
