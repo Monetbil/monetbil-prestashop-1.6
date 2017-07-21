@@ -1,4 +1,4 @@
-### Download the SDK
+### Download the Module
 
 https://github.com/Monetbil/monetbil-prestashop-1.6/raw/master/monetbil.zip
 
