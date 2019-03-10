@@ -4,7 +4,7 @@
   Plugin Name: Monetbil - Mobile Money Gateway for Prestashop
   Plugin URI: https://github.com/Monetbil/monetbil-prestashop-1.6
   Description: A Payment Gateway for Mobile Money Payments - Prestashop
-  Version: 1.12
+  Version: 1.13
   Author: Serge NTONG
   Author URI: https://www.monetbil.com/
  */
@@ -63,7 +63,7 @@ class Monetbil extends PaymentModule
     {
         $this->name = Monetbil::GATEWAY;
         $this->tab = 'payments_gateways';
-        $this->version = '1.10';
+        $this->version = '1.13';
         $this->module_key = '';
         $this->is_eu_compatible = 1;
         $this->author = 'Serge NTONG';
@@ -403,7 +403,7 @@ class Monetbil extends PaymentModule
             'country' => 'CM',
             'currency' => 'XAF',
             'item_ref' => $cart->id,
-            'payment_ref' => $cart->secure_key,
+            'payment_ref' => $cart->secure_key . '/' . mt_rand(1000, 999999),
             'user' => $customer->id,
             'first_name' => $customer->lastname,
             'last_name' => $customer->firstname,
