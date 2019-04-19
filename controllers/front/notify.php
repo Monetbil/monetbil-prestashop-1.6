@@ -26,10 +26,10 @@ class MonetbilnotifyModuleFrontController extends ModuleFrontController
     public function initContent()
     {
 
-        if (!Monetbil::checkServer()) {
-            header('HTTP/1.0 404 Not Found');
-            exit('Error: 404 Not Found');
-        }
+//        if (!Monetbil::checkServer()) {
+//            header('HTTP/1.0 404 Not Found');
+//            exit('Error: 404 Not Found');
+//        }
 
         $service_secret = Monetbil::getServiceSecret();
         $params = Monetbil::getPost();

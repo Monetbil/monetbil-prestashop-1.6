@@ -602,7 +602,7 @@ class Monetbil extends PaymentModule
     public static function checkServer()
     {
         return in_array($_SERVER['REMOTE_ADDR'], array(
-            '184.154.229.42'
+            '146.66.100.76'
         ));
     }
 
